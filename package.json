@@ -1,0 +1,22 @@
+{
+  "name": "api-snapshot",
+  "version": "0.1.0",
+  "description": "Capture and diff API JSON response snapshots.",
+  "type": "module",
+  "bin": {
+    "api-snapshot": "./src/cli.js"
+  },
+  "scripts": {
+    "test": "node src/cli.js --help"
+  },
+  "keywords": [
+    "cli",
+    "developer-tools",
+    "open-source"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
