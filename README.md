@@ -25,12 +25,28 @@ api-snapshot --help
 Capture from a URL or JSON file, then compare snapshots by name.
 
 ```bash
-api-snapshot capture users ./users.json\napi-snapshot list\napi-snapshot diff users users-v2
+api-snapshot capture users ./users.json
+api-snapshot list
+api-snapshot diff users users-v2
+```
+
+Try the included example:
+
+```bash
+api-snapshot capture users-v1 examples/users-v1.json
+api-snapshot capture users-v2 examples/users-v2.json
+api-snapshot diff users-v1 users-v2
 ```
 
 ### Status
 
 This is an MVP designed to be useful immediately and easy to extend. It has no runtime dependencies and targets Node.js 18+.
+
+### Test
+
+```bash
+npm test
+```
 
 ## 中文
 
@@ -53,12 +69,28 @@ api-snapshot --help
 可以从 URL 或本地 JSON 文件抓取快照，再按名称比较两个快照。
 
 ```bash
-api-snapshot capture users ./users.json\napi-snapshot list\napi-snapshot diff users users-v2
+api-snapshot capture users ./users.json
+api-snapshot list
+api-snapshot diff users users-v2
+```
+
+试试内置示例：
+
+```bash
+api-snapshot capture users-v1 examples/users-v1.json
+api-snapshot capture users-v2 examples/users-v2.json
+api-snapshot diff users-v1 users-v2
 ```
 
 ### 当前状态
 
 这是一个可以直接使用的 MVP，重点是小、清晰、容易二次开发。运行时无第三方依赖，要求 Node.js 18+。
+
+### 测试
+
+```bash
+npm test
+```
 
 ## License
 
