@@ -1,5 +1,7 @@
 # api-snapshot
 
+[![CI](https://github.com/niuxinhuai/api-snapshot/actions/workflows/ci.yml/badge.svg)](https://github.com/niuxinhuai/api-snapshot/actions/workflows/ci.yml)
+
 Capture API JSON responses and diff their field-level shape over time.
 
 抓取接口 JSON 响应并对比字段结构变化，帮助前后端联调时发现破坏性变更。
